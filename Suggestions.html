@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="suggestions.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suggestion Form</title>
+</head>
+<body>
+    <!--navigate start-->
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.jpg" class="logo">
+            <ul>
+                <!--<li><img src="images/notification.png" alt=""></li>-->
+                <div class="menu-bar">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Investments</a></li>
+                        <li><a href="#">MFS</a></li>
+                        <li><a href="#">Advisory</a></li>
+                        <li><a href="#">What's New</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="#">News</a></li>
+                                    <li class="hover-me"><a href="#">Team</a><i class="fa fa-angle-right"></i>
+                                        <div class="sub-menu-2">
+                                            <ul>
+                                                <li><a href="#">Team Member Joining</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Fund</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+            </ul>
+        </div>
+
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online">
+                <img src="images/user.jpeg">
+            </div>
+        </div>
+    </nav>
+    <!--navigate end-->
+
+
+    <div class="wrapper">
+        <input type="radio" name="slider" id="dashboard" >
+        <input type="radio" name="slider" id="suggestion" checked>
+        <input type="radio" name="slider" id="polls">
+        <nav>
+            <label for="dashboard" class="dashboard">Dashboard</label>
+            <label for="suggestion" class="suggestion">Suggestions</label>
+            <label for="polls" class="polls">Polls</label>
+            <div class="slider"></div>
+        </nav>
+
+        <section>
+            <div class="content content-1">
+                <div class="title">My Dashboard</div>
+                <div class="container">
+                    
+                </div>
+            </div>
+
+            <div class="content content-2">
+                <div class="title">Suggestion Boxes</div>
+                <div class="container">
+                    <div class="left">
+                        <h3 class="name">Employee Feedback</h3>
+                        <div class="suggest">18 suggestions</div>                  
+                        <div class="days">10 days ago</div>
+                        <div class="link"><a href="www.google.co.za">Navion</a></div>
+                        <div class="view"><button>View</button></div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="left">
+                        <h3 class="name">Changes to Kitchen Feedback</h3>
+                        <div class="suggest">22 suggestions</div>                  
+                        <div class="days">9 days ago</div>
+                        <div class="link"><a href="www.google.co.za">Navion</a></div>
+                        <div class="view"><button>View</button></div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="left">
+                        <h3 class="name">New Vacation Policy Feedback</h3>
+                        <div class="suggest">10 suggestions</div>                  
+                        <div class="days">5 days ago</div>
+                        <div class="link"><a href="www.google.co.za">Navion</a></div>
+                        <div class="view"><button>View</button></div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="left">
+                        <h3 class="name">Employee Handbook Ammendments Feedback</h3>
+                        <div class="suggest">15 suggestions</div>                  
+                        <div class="days">3 days ago</div>
+                        <div class="link"><a href="www.google.co.za">Navion</a></div>
+                        <div class="view"><button>View</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content content-3">
+                <div class="title">Polls</div>
+                <div class="container">
+                    <h3 class="year">2022</h3>
+              
+                    <div class="event">
+                      <div class="event-left">
+                        <div class="event-date">
+                          <div class="date">3</div>
+                          <div class="month">Oct</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

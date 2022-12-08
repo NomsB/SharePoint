@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #efefef;
+}
+
+/*tab bar*/
+/*nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0072bb;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}*/
+
+.logo{
+    width: 160px;
+    height: 70px;
+    margin-right: 45px;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-left ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-left ul li img{
+    width: 28px;
+    margin: 0 15px;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.active, .menu-bar ul li:hover{
+    background: #fff;
+    border-radius: 3px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: #0072bb;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: white;
+}
+
+.fa-angle-right{
+    float: right;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #0072bb;
+}
+
+.nav-user-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-user-icon{
+    margin-left: 30px;
+}
+
+.search-box{
+    background: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-box img{
+    width: 18px;
+}
+
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*tab bar*/
+
+.wrapper{
+    max-width: 80%;
+    margin: 15px auto;
+    background: whitesmoke;
+    padding: 25px 30px 30px 30px;
+    border-radius: 10px;
+}
+
+.wrapper nav{
+    position: relative;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper nav label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    color: #0072bb;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+#dashboard:checked ~ nav label.dashboard,
+#suggestion:checked ~ nav label.suggestion,
+#polls:checked ~ nav label.polls{
+    color: white;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.wrapper nav .slider{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background: #0072bb;
+    border-radius: 5px;
+    z-index: 0;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+}
+
+#suggestion:checked~nav .slider{
+    left: 35%;
+}
+
+#polls:checked~nav .slider{
+    left: 70%;
+}
+
+section .content{
+    display: none;
+}
+
+#dashboard:checked~section .content-1{
+    display: block;
+}
+
+#suggestion:checked~section .content-2{
+    display: block;
+}
+
+#polls:checked~section .content-3{
+    display: block;
+}
+
+section .content .title{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+}
+
+.container{
+    max-width: 50%;
+    margin: 0 20px;
+    background: white;
+    border-radius: 10px;
+    max-height: 100vh;
+
+}
+.container h3.name{
+    font-size: 18px;
+
+}
+
+.container .left{
+    box-shadow: 0 4px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 32px 0;
+}
+.container .left .suggest{
+    font-size: 15px;
+    padding: 2px;
+}
+.container .left .days{
+    font-size: 12px;
+    padding: 2px;
+}
+
+.container .left .link{
+    font-size: 15px;
+    padding: 2px;
+}
+
+.container .left button{
+    /*float: right;*/
+    padding: 15px;
+    background: #0072bb;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    align-content: center;
+}
