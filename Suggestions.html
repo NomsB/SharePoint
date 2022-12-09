@@ -16,7 +16,7 @@
                 <!--<li><img src="images/notification.png" alt=""></li>-->
                 <div class="menu-bar">
                     <ul>
-                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#">Investments</a></li>
                         <li><a href="#">MFS</a></li>
                         <li><a href="#">Advisory</a></li>
@@ -56,7 +56,7 @@
     <div class="wrapper">
         <input type="radio" name="slider" id="dashboard" >
         <input type="radio" name="slider" id="suggestion" checked>
-        <input type="radio" name="slider" id="polls">
+        <input type="radio" name="slider" id="polls" >
         <nav>
             <label for="dashboard" class="dashboard">Dashboard</label>
             <label for="suggestion" class="suggestion">Suggestions</label>
@@ -65,21 +65,22 @@
         </nav>
 
         <section>
+            <!--Dashboard-->
             <div class="content content-1">
-                <div class="title">My Dashboard</div>
-                <div class="container">
-                    
-                </div>
+                <div class="title"><h2>My Dashboard</h2></div>
+                
             </div>
 
+            <!--Suggestion Box-->
             <div class="content content-2">
-                <div class="title">Suggestion Boxes</div>
+                <!--left side-->
+                <div class="title"><h2>Suggestion Boxes</h2></div>
                 <div class="container">
                     <div class="left">
                         <h3 class="name">Employee Feedback</h3>
                         <div class="suggest">18 suggestions</div>                  
-                        <div class="days">10 days ago</div>
-                        <div class="link"><a href="www.google.co.za">Navion</a></div>
+                        <div class="days">3 days ago</div>
+                        <div class="link"><a href="#">Changes to Workplace</a></div>
                         <div class="view"><button>View</button></div>
                     </div>
                 </div>
@@ -88,8 +89,8 @@
                     <div class="left">
                         <h3 class="name">Changes to Kitchen Feedback</h3>
                         <div class="suggest">22 suggestions</div>                  
-                        <div class="days">9 days ago</div>
-                        <div class="link"><a href="www.google.co.za">Navion</a></div>
+                        <div class="days">5 days ago</div>
+                        <div class="link"><a href="#">Kitchen Survey</a></div>
                         <div class="view"><button>View</button></div>
                     </div>
                 </div>
@@ -99,7 +100,7 @@
                         <h3 class="name">New Vacation Policy Feedback</h3>
                         <div class="suggest">10 suggestions</div>                  
                         <div class="days">5 days ago</div>
-                        <div class="link"><a href="www.google.co.za">Navion</a></div>
+                        <div class="link"><a href="#">Vacation Policy</a></div>
                         <div class="view"><button>View</button></div>
                     </div>
                 </div>
@@ -108,26 +109,155 @@
                     <div class="left">
                         <h3 class="name">Employee Handbook Ammendments Feedback</h3>
                         <div class="suggest">15 suggestions</div>                  
-                        <div class="days">3 days ago</div>
-                        <div class="link"><a href="www.google.co.za">Navion</a></div>
+                        <div class="days">9 days ago</div>
+                        <div class="link"><a href="#">Employee Handbook</a></div>
                         <div class="view"><button>View</button></div>
+                    </div>
+                </div>
+
+                <!--right side-->
+                <div class="container-right">
+                    <h5 class="name">Latest Activity</h5>
+                    <div class="right">
+                        <h3>Employee Feedback</h3>
+                        <div class="days">3 days ago</div>
+                        <p>I am happy to the recent changes to the Workplace.
+                        It has made it a more confortable place to come to everyday.</p>                 
+                    </div>
+
+                    <div class="right">
+                        <h3>Kitchen Policy</h3>
+                        <div class="days">5 days ago</div>
+                        <p>I am happy with the kitchen policies.
+                        It will make it easier to keep the Workplace tidy as people know what is expected of them and it is in writing what the penalties are</p>                 
+                    </div>
+
+                    <div class="right">
+                        <h3>Employee Handbook</h3>
+                        <div class="days">7 days ago</div>
+                        <p>The ammendments have been noted and it was nice for the changes to be brought to our attention.
+                        Makes it easier to follow the changes when we know what to look for.
+                        </p>                 
+                    </div>
+
+                    <div class="right">
+                        <h3>Year-End Theme Ideas</h3>
+                        <div class="days">5 months ago</div>
+                        <p>It would be nice to have a Vegas themed party.
+                        The venue can be turned into a casino with some card tables and dealers.</p>                 
                     </div>
                 </div>
             </div>
 
+            <!--Polls-->
             <div class="content content-3">
-                <div class="title">Polls</div>
-                <div class="container">
-                    <h3 class="year">2022</h3>
-              
-                    <div class="event">
-                      <div class="event-left">
-                        <div class="event-date">
-                          <div class="date">3</div>
-                          <div class="month">Oct</div>
+                <div class="title"><h2>Polls</h2></div>
+                <div class="poll-container">
+                    <div class="poll">
+                        <div class="poll-left">
+                            <div class="event-date">
+                                <div class="chart">
+                                    <img src="images/chart.jpg">
+                                </div>
+                                <div class="created">Created: 1 month ago</div>
+                                <div class="last-activity">Last activity: 15 days ago</div>
+                            </div>
                         </div>
-                      </div>
+
+                        <div class="poll-right">
+                            <h3 class="poll-title">Topic 1</h3>
+                            <p>Description of the topic</p>
+                            <a href="#">Already Voted</a>
+                        </div>
                     </div>
+                </div>
+
+                <div class="poll-container">
+                    <div class="poll">
+                        <div class="poll-left">
+                            <div class="event-date">
+                                <div class="chart">
+                                    <img src="images/chart.jpg">
+                                </div>
+                                <div class="created">Created: 2 months ago</div>
+                                <div class="last-activity">Last activity: 2 months ago</div>
+                            </div>
+                        </div>
+
+                        <div class="poll-right">
+                            <h3 class="poll-title">Topic 2</h3>
+                            <p>Description of the topic</p>
+                            <div class="want">
+                                <a href="#">I want to Vote!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poll-container">
+                    <div class="poll">
+                        <div class="poll-left">
+                            <div class="event-date">
+                                <div class="chart">
+                                    <img src="images/chart.jpg">
+                                </div>
+                                <div class="created">Created: 9 months ago</div>
+                                <div class="last-activity">Last activity: 25 days ago</div>
+                            </div>
+                        </div>
+
+                        <div class="poll-right">
+                            <h3 class="poll-title">Topic 3</h3>
+                            <p>Description of the topic</p>
+                            <div class="want">
+                                <a href="#">I want to Vote!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poll-container">
+                    <div class="poll">
+                        <div class="poll-left">
+                            <div class="event-date">
+                                <div class="chart">
+                                    <img src="images/chart.jpg">
+                                </div>
+                                <div class="created">Created: 10 months ago</div>
+                                <div class="last-activity">Last activity: 8 month ago</div>
+                            </div>
+                        </div>
+
+                        <div class="poll-right">
+                            <h3 class="poll-title">Topic 4</h3>
+                            <p>Description of the topic</p>
+                            <a href="#">Already Voted</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="poll-container">
+                    <div class="poll">
+                        <div class="poll-left">
+                            <div class="event-date">
+                                <div class="chart">
+                                    <img src="images/chart.jpg">
+                                </div>
+                                <div class="created">Created: 1 year ago</div>
+                                <div class="last-activity">Last activity: 5 months ago</div>
+                            </div>
+                        </div>
+
+                        <div class="poll-right">
+                            <h3 class="poll-title">Topic 5</h3>
+                            <p>Description of the topic</p>
+                            <a href="#">Already Voted</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="more">
+                    <a href="#">More Polls</a>
                 </div>
             </div>
         </section>
