@@ -10,7 +10,7 @@ body{
 }
 
 /*tab bar*/
-/*nav{
+nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,7 +19,7 @@ body{
     position: sticky;
     top: 0;
     z-index: 100;
-}*/
+}
 
 .logo{
     width: 160px;
@@ -185,7 +185,7 @@ body{
     text-align: center;
     line-height: 50px;
     cursor: pointer;
-    color: #0072bb;
+    color: white;
     font-size: 17px;
     position: relative;
     z-index: 1;
@@ -206,8 +206,8 @@ input[type="radio"]{
     position: absolute;
     height: 100%;
     width: 30%;
-    background: #0072bb;
-    border-radius: 5px;
+    background: #b0b0b0;
+    border-radius: 1x;
     z-index: 0;
     left: 0;
     bottom: 0;
@@ -238,18 +238,19 @@ section .content{
     display: block;
 }
 
+/*suggestion list*/
 section .content .title{
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 500;
     margin: 30px 0 10px 0;
 }
 
 .container{
-    max-width: 50%;
+    max-width: 40%;
     margin: 0 20px;
     background: white;
     border-radius: 10px;
-    max-height: 100vh;
+    height: auto;
 
 }
 .container h3.name{
@@ -257,11 +258,13 @@ section .content .title{
 
 }
 
+/*left*/
 .container .left{
     box-shadow: 0 4px 16px -8px rgba(0,0,0,0.4);
     border-radius: 10px;
     padding: 10px;
     margin: 32px 0;
+    height: auto;
 }
 .container .left .suggest{
     font-size: 15px;
@@ -279,7 +282,7 @@ section .content .title{
 
 .container .left button{
     /*float: right;*/
-    padding: 15px;
+    position: relative;
     background: #0072bb;
     color: white;
     font-size: 18px;
@@ -288,7 +291,128 @@ section .content .title{
     cursor: pointer;
     width: 150px;
     height: 50px;
-    margin: 20px auto 0;
+    left: 17rem;
+    top: -2.8rem;
+    bottom: 0;
+    /*margin: 20px auto 0;*/
     border-radius: 5px;
     align-content: center;
+}
+
+/*right*/
+.container-right{
+    position: relative;
+    box-shadow: 0 4px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 50%;
+    background: white;
+    border-radius: 10px;
+    max-height: 100vh;
+    margin-left: 31rem;
+    top: -730px;
+}
+
+.container-right h5{
+    font-size: 15px;
+    color: #333;
+}
+
+.container-right h3{
+    padding-top: 35px;
+    font-size: 18px;
+    margin-left: 55px;
+}
+
+.container-right .days{
+    font-size: 12px;
+    padding: 2px;
+    margin-left: 55px;
+}
+.container-right p{
+    padding: 15px;
+    margin-top: 25px;
+    margin-left: 55px;
+    width: 28rem;
+    background-color: #ebecf0;
+    border-radius: 7px;
+}
+
+
+/*polls*/
+.poll-container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ebecf0;
+
+}
+.poll-container .poll{
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+}
+.poll .poll-left{
+    background: #0072bb;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+}
+.poll .chart img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.poll .poll-left .created{
+    font-size: 10px;
+    padding: 5px;
+}
+
+.poll .poll-left .last-activity{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.poll-right h3.poll-title{
+    font-size: 25px;
+    padding: 5px;
+}
+.poll-right p {
+    font-size: 18px;
+    padding: 5px;
+}
+.poll-right a{
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 400px;
+    top: -10px;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.poll-right .want a{
+    background-color: orangered;
+}
+
+.content-3 .more a{
+    position: relative;
+    text-decoration: none;
+    margin-left: 50%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #b0b0b0;
+    border-radius: 5px;
 }
